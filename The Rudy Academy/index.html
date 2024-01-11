@@ -163,7 +163,6 @@
         <section class="announcements">
             <section class="prices">
 
-
             <h2>Rudy 2k 2023 Lineup</h2> <hr>
             <p>1.) Ethan Moore 2B</p>
             <p>2.) Whyatt Waro CF</p>
@@ -200,40 +199,32 @@
     </footer>
 
     <script>
-// Function to open the sidebar
 function openNav() {
   var sidebar = document.getElementById("mySidenav");
   sidebar.style.width = "250px";
 }
 
-// Function to close the sidebar
 function closeNav() {
   var sidebar = document.getElementById("mySidenav");
   sidebar.style.width = "0";
 }
 
-// Add event listener to the document for clicks
 document.addEventListener("click", function (event) {
-  // Check if the click target is not inside the sidebar or the menu button
   if (
     event.target.closest(".sidenav") === null &&
     event.target.id !== "closeBtn" &&
     event.target.className !== "options" &&
     event.target.className !== "header-icon"
   ) {
-    // If it's not inside the sidebar or the menu button, close the sidebar
     closeNav();
   }
 });
 
-// Function to toggle the sidebar (open/close)
 function toggleNav() {
   var sidebar = document.getElementById("mySidenav");
   if (sidebar.style.width === "250px") {
-    // If the sidebar is open, close it
     closeNav();
   } else {
-    // If the sidebar is closed, open it
     openNav();
   }
 }
