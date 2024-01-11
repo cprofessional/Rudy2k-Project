@@ -1,0 +1,76 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    flex-basis: 100%; /* Each category takes full width */
+    margin-bottom: 20px; /* Add spacing between categories */
+    background-color: #161515;
+    padding: 5px; /* Reduced padding */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 1pc;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align cards in the middle horizontally */
+    align-items: stretch; /* Align cards to stretch to full height */
+    gap: 10px; /* Spacing between cards */
+}
+
+.card {
+    flex-basis: calc(20% - 10px); /* 5 cards in a row with spacing */
+    background-color: #333;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img,
+.card video {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.description {
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+    background-color: #222;
+    border-radius: 0 0 5px 5px;
+}
