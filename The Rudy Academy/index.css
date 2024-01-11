@@ -1,19 +1,14 @@
-/* Reset some default styles */
-body, h1, h2, ul, li, p {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Basic styling for the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #333; /* Dark background color */
+    background-color: #333;
     color: #fff;
 }
-
-/* Header styles */
-/* */
-
 
 * {box-sizing: border-box;}
 
@@ -21,11 +16,6 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
 
 .sidenav {
     height: 100%;
@@ -66,11 +56,6 @@ body {
     .sidenav a {font-size: 18px;}
   }
 
-
-
-
-
-
 .header-icon {
     display: inline;
 }
@@ -80,8 +65,8 @@ body {
     background-color: #000000;
     padding: 15px 15px;
     display: flex;
-    justify-content: space-between; /* Add this line */
-    align-items: center; /* Vertically center the child elements */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-options {
@@ -92,7 +77,6 @@ body {
 .header img {
     height: 35px;
     width: 35px;
-    /* overflow: hidden; */
 }
 
 .header a, span {
@@ -106,11 +90,11 @@ body {
 
 .header-icon {
     display: flex;
-    justify-content: center; /* Horizontally center the child elements */
-    align-items: center; /* Vertically center the child elements */
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 4%;
-    right: 50%; /* Adjust the right position as needed */
+    right: 50%;
 }
 
 .header a.logo, span.active {
@@ -130,7 +114,7 @@ body {
 
 .header-right {
     display: flex;
-    align-items: center; /* Vertically center the child elements */
+    align-items: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -147,23 +131,22 @@ body {
 
 .socials-bottom {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-top: 20px; /* Adjust the margin as needed */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     position: absolute;
-    bottom: 20px; /* Adjust the bottom spacing as needed */
+    bottom: 20px;
 }
 
 .socials-bottom a {
-    bottom: 20px; /* Adjust the bottom spacing as needed */
-    margin: 0 1px; /* Add margin between icons */
+    bottom: 20px;
+    margin: 0 1px;
 }
 
 .socials-bottom img {
     height: 50px;
     width: 50px;
 }
-
 
 @media screen and (max-width: 500px) {
   .header a {
@@ -177,110 +160,65 @@ body {
   }
 }
 
-
-
-/* Header content styles */
-header h1 {
-    font-family: 'Georgia', serif; /* Change font to something slanted */
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.new-header-content {
-    text-align: center;
-    margin-top: 20px; /* Adjust margin to position below the previous header */
-}
-
-.new-header-content h1 {
-    font-family: 'Georgia', serif; /* Change font to something slanted */
-    font-style: italic; /* Italicize the font */
-    font-size: 24px; /* Adjust font size as needed */
-    margin-bottom: 10px;
-}
-
-.new-header-content img {
-    max-width: 300px; /* Make the image even larger */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Navigation styles */
 nav {
     background-color: #222;
     color: #fff;
     padding: 10px;
 }
 
-/* nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-} */
-/* 
-nav li {
-    margin: 0 10px;
-} */
-
-/* nav a {
-    text-decoration: none;
-    color: #fff;
-} */
-
-/* Main content styles */
 main {
-    font-family: 'Georgia', serif; /* Change font to something slanted */
+    font-family: 'Georgia', serif;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    text-align: center; /* Center the content inside the main box */
+    text-align: center;
 }
 
 .prices {
-    background-color: #333; /* Background color */
-    color: #fff; /* Text color */
+    background-color: #333;
+    color: #fff;
     padding: 20px;
-    border-radius: 5px; /* Add rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
 .prices h1 {
-    font-size: 24px; /* Increase font size for the title */
-    margin-bottom: 20px; /* Add space below the title */
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .price-item {
-    margin: 20px 0; /* Add space between price items */
+    margin: 20px 0;
 }
 
 .price-item p {
-    margin: 5px 0; /* Add space between price and description */
+    margin: 5px 0;
 }
 
 .price-item strong {
-    font-size: 18px; /* Increase font size for strong elements */
+    font-size: 18px;
 }
 
 .signup-button {
     display: inline-block;
-    background-color: #007bff; /* Blue color */
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
-    margin-top: 20px; /* Increase margin for better spacing */
+    margin-top: 20px;
 }
 
 .signup-button:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
+    background-color: #0056b3;
 }
 
 .info-box {
     background-color: #222;
     padding: 20px;
-    margin: 7pc auto; /* Adjust the margin to create more space */
+    margin: 7pc auto;
     text-align: center;
 }
 
@@ -299,40 +237,35 @@ main {
 }
 
 .topicscovering, .servicesincluded, .ourstudents {
-    text-align: center; /* Center-align the content */
-    margin-top: 20px; /* Add margin for separation */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .topicscovering h2, .servicesincluded h2, .ourstudents h2 {
     margin-bottom: 10px;
 }
 
-/* Style for the "Sign Up" button */
 .signup-button {
     display: inline-block;
-    background-color: #007bff; /* Blue color */
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
-
-    /* Center the button horizontally and add margin to the top */
     margin: 4pc auto 10px;
     display: block;
     width: fit-content;
 }
 
 .signup-button:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
+    background-color: #0056b3;
 }
 
-
-/* Announcements styles */
 .announcements {
     background-color: hsl(0, 0%, 13%);
     padding: 20px;
-    margin: 2% auto; /* Adjust the margin as needed */
+    margin: 2% auto;
     text-align: center;
     border-radius: 5px;
     max-width: 800px;
@@ -372,9 +305,6 @@ main {
     margin: 5px 0;
 }
 
-
-/* Student card styles */
-/* Student card styles */
 .ourstudents {
     display: flex;
     flex-wrap: wrap;
@@ -387,7 +317,7 @@ main {
     border-radius: 5px;
     margin: 10px;
     text-align: center;
-    flex: 0 0 calc(33.33% - 20px); /* Three cards in a row with margin */
+    flex: 0 0 calc(33.33% - 20px);
     box-sizing: border-box;
 }
 
@@ -404,7 +334,7 @@ main {
 }
 
 .space {
-    height: 5pc; /* Adjust the height for desired spacing */
+    height: 5pc;
 }
 
 .topicscovering p, .servicesincluded p, .ourstudents p {
@@ -413,17 +343,17 @@ main {
 
 .gallery-button {
     display: inline-block;
-    background-color: #007bff; /* Blue color */
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
-    margin-top: 10px; /* Add margin to the top */
+    margin-top: 10px;
 }
 
 .gallery-button:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
+    background-color: #0056b3;
 }
 
 .meet-the-coach {
@@ -443,12 +373,12 @@ main {
 .meet-the-coach .coach-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align content */
-    margin-top: 20px; /* Add margin for separation */
+    align-items: center;
+    margin-top: 20px;
 }
 
 .meet-the-coach img {
-    max-width: 100px; /* Adjust the image width */
+    max-width: 100px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -468,7 +398,6 @@ main {
     text-align: center;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
     padding: 10px;
